@@ -163,10 +163,10 @@ grid-template-columns:repeat(3,1fr);
 gap:40px;
 }
 
-/*.footer a{
+.footer a{
 color:white;
 text-decoration:none;
-}*/
+}
 
 .copyright{
 text-align:center;
@@ -595,7 +595,7 @@ color:#64748b;
 
 /* FOOTER */
 
-.footer{
+/*.footer{
 margin-top:60px;
 padding:30px;
 text-align:center;
@@ -611,7 +611,7 @@ margin-top:10px;
 margin:0 10px;
 color:#64748b;
 text-decoration:none;
-}
+}*/
 
 /* RESPONSIVE */
 
