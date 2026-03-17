@@ -1,0 +1,262 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Public Sans",sans-serif;
+background:#f6f7f8;
+color:#1e293b;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.9);
+border-bottom:1px solid #e2e8f0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:900;
+}
+
+.logo span{
+color:#1173d4;
+}
+
+.logo h2 span{
+color:#1173d4;
+}
+
+.logo a{
+text-decoration:none;
+}
+
+.nav a{
+text-decoration:none;
+color:#64748b;
+font-size:14px;
+}
+
+/* MAIN */
+
+.main{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:calc(100vh - 120px);
+padding:20px;
+}
+
+/* CONTENEDOR */
+
+.login-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+max-width:1000px;
+width:100%;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN */
+
+.login-image{
+background:url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhozXLjIidqFb-G2GYGJc6ckjkJGlxcJAIm7TAETmlxZLO1WGWCCc2JDKqkGPzjjQ1lEJD00Qt5FAsZlLQQT5SQKlUjoOzcGv9lsXrk6GT3ZCND4dLfGuT9deiHy4ufRSDM-wEjc30BtqxXajkH5zKZi3aGMMmc8vHVNqYuDpElU32F1ek6_0I1dsAgCRjMzI2kudwVKBASYCLYEop1ELsTmDXR9pXZLvBsEq7as_GDWv3rV195C89QPcvO-U7OFdVs0bVUbJT0p0") center/cover no-repeat;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+width:100%;
+padding:40px;
+background:linear-gradient(to top, rgba(17,115,212,0.9), transparent);
+color:white;
+}
+
+.overlay h3{
+font-size:26px;
+margin-bottom:10px;
+}
+
+/* FORMULARIO */
+
+.login-form{
+padding:40px;
+display:flex;
+flex-direction:column;
+}
+
+.form-header h1{
+font-size:28px;
+margin-bottom:5px;
+}
+
+.form-header p{
+color:#64748b;
+margin-bottom:20px;
+}
+
+/* INPUTS */
+
+.form-group{
+margin-bottom:15px;
+}
+
+.input-icon{
+position:relative;
+}
+
+.input-icon span{
+position:absolute;
+left:12px;
+top:50%;
+transform:translateY(-50%);
+color:#94a3b8;
+}
+
+.input-icon input{
+width:100%;
+padding:12px 40px;
+border-radius:8px;
+border:1px solid #cbd5e1;
+}
+
+.eye{
+position:absolute;
+right:10px;
+top:50%;
+transform:translateY(-50%);
+background:none;
+border:none;
+cursor:pointer;
+}
+
+/* LABEL ROW */
+
+.label-row{
+display:flex;
+justify-content:space-between;
+font-size:14px;
+margin-bottom:5px;
+}
+
+.label-row a{
+color:#1173d4;
+text-decoration:none;
+font-size:12px;
+}
+
+/* CHECK */
+
+.remember{
+display:flex;
+align-items:center;
+gap:10px;
+margin:10px 0;
+}
+
+/* BOTÓN */
+
+.btn{
+width:100%;
+padding:14px;
+background:#1173d4;
+color:white;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+display:flex;
+justify-content:center;
+gap:8px;
+}
+
+.btn:hover{
+background:#0f63b5;
+}
+
+/* DIVIDER */
+
+.divider{
+text-align:center;
+margin:20px 0;
+position:relative;
+}
+
+.divider span{
+background:white;
+padding:0 10px;
+position:relative;
+z-index:1;
+color:#64748b;
+}
+
+.divider::before{
+content:"";
+position:absolute;
+width:100%;
+height:1px;
+background:#e2e8f0;
+top:50%;
+left:0;
+}
+
+/* SOCIAL */
+
+.social{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.social button{
+padding:10px;
+border-radius:8px;
+border:1px solid #cbd5e1;
+background:white;
+cursor:pointer;
+}
+
+/* FOOTER FORM */
+
+.footer-form{
+margin-top:auto;
+text-align:center;
+font-size:12px;
+color:#94a3b8;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:15px;
+font-size:14px;
+color:#64748b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.login-container{
+grid-template-columns:1fr;
+}
+
+.login-image{
+display:none;
+}
+
+}
