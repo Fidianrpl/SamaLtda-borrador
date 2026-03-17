@@ -138,6 +138,7 @@ padding:80px 0;
 }
 
 .products-grid{
+margin-left: 200px;
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:30px;
