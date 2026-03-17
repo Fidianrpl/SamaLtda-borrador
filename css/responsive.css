@@ -10,6 +10,7 @@ grid-template-columns:1fr;
 
 .products-grid{
 grid-template-columns:1fr;
+margin-left: 0px;
 }
 
 .footer-grid{
