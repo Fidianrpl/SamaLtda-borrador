@@ -12,12 +12,17 @@ README.md
 css/
   styles.css
   responsive.css
+  global.css
+  login.css
+  recovery.css
   js/
     menu.js
 pages/
   contacto.html
   productos.html
   quienes-somos.html
+  login.html
+  recovery.html
 ```
 
 - **index.html**: Página principal con información general, productos destacados y navegación.
@@ -25,9 +30,14 @@ pages/
   - [`quienes-somos.html`](pages/quienes-somos.html): Historia, misión, visión y valores de la empresa.
   - [`productos.html`](pages/productos.html): Catálogo de productos de sal industrial.
   - [`contacto.html`](pages/contacto.html): Formulario de contacto y datos de la empresa.
+  - [`login.html`](pages/login.html): Acceso restringido para usuarios corporativos.
+  - [`recovery.html`](pages/recovery.html): Recuperación de contraseña.
 - **css/**: Archivos de estilos:
   - [`styles.css`](css/styles.css): Estilos base y componentes.
   - [`responsive.css`](css/responsive.css): Adaptación responsive para móviles y tablets.
+  - [`global.css`](css/global.css): Estilos globales para tarjetas y layouts.
+  - [`login.css`](css/login.css): Estilos específicos para la página de login.
+  - [`recovery.css`](css/recovery.css): Estilos para recuperación de contraseña.
   - [`js/menu.js`](css/js/menu.js): Script para menú móvil.
 - **LICENSE**: Licencia Apache 2.0.
 - **README.md**: Este archivo.
@@ -42,6 +52,7 @@ No requiere instalación. Solo abre `index.html` en tu navegador. Para editar o 
 - Menú de navegación dinámico ([`menu.js`](css/js/menu.js)).
 - Catálogo de productos con filtros.
 - Formulario de contacto (sin backend).
+- Sistema de login y recuperación de contraseña (interfaz).
 
 ## Créditos
 
@@ -50,4 +61,4 @@ No requiere instalación. Solo abre `index.html` en tu navegador. Para editar o 
 
 ## Licencia
 
-Este proyecto está bajo la licencia Apache 2.0. Consulta el archivo [`LICENSE`](LICENSE) para
+Este proyecto está bajo la licencia Apache 2.0. Consulta el archivo [`LICENSE`](LICENSE) para más detalles.
