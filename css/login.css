@@ -40,6 +40,13 @@ color:#1173d4;
 text-decoration:none;
 }
 
+.logo a:active,
+.logo a:focus,
+.logo a:visited,
+.logo a:hover {
+    text-decoration: none;
+    outline: none;
+}
 .nav a{
 text-decoration:none;
 color:#64748b;
@@ -135,7 +142,7 @@ border:1px solid #cbd5e1;
 
 .eye{
 position:absolute;
-right:10px;
+right:75px;
 top:50%;
 transform:translateY(-50%);
 background:none;
@@ -249,14 +256,52 @@ color:#64748b;
 
 /* RESPONSIVE */
 
+/* ...existing code... */
+
+/* Mejora: Ajusta el formulario para pantallas pequeñas */
 @media(max-width:900px){
-
-.login-container{
-grid-template-columns:1fr;
+    .login-container{
+        grid-template-columns:1fr;
+        max-width: 95vw;
+    }
+    .login-image{
+        display:none;
+    }
+    .login-form{
+        padding:20px;
+    }
 }
 
-.login-image{
-display:none;
+/* Mejora: Botón de mostrar contraseña */
+.eye span {
+    color: #64748b;
+    font-size: 20px;
 }
 
+/* Mejora: Input focus */
+.input-icon input:focus {
+    border-color: #1173d4;
+    background: #f1f5f9;
 }
+
+/* Mejora: Botón social */
+.social button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+.social button:hover {
+    background: #e2e8f0;
+}
+
+/* Mejora: Footer */
+.footer {
+    background: #f1f5f9;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* ...existing code... */

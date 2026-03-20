@@ -1,127 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Login | SAMA Ltda.</title>
-
-<link rel="stylesheet" href="../css/login.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SAMA Ltda.</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
-
 <body>
-
-<header class="header">
-
-<div class="logo">
-<img src="http://samaltda.com/gallery_gen/f4891564b318f2318266f83e5033b9e4.jpg" alt="logo-sama" width="70px" height="70px">                
-<a href="../index.html"><h2>SAMA <span>Ltda.</span></h2></a>
-</div>
-
-<nav class="nav">
-<a href="#">Soporte Técnico</a>
-</nav>
-
-</header>
-
-
-<main class="main">
-
-<div class="login-container">
-
-<!-- IMAGEN LATERAL -->
-
-<div class="login-image">
-
-<div class="overlay">
-<h3>Líderes en Procesamiento de Sal</h3>
-<p>Gestión eficiente para la industria química y alimentaria.</p>
-</div>
-
-</div>
-
-<!-- FORMULARIO -->
-
-<div class="login-form">
-
-<div class="form-header">
-<h1>Bienvenido</h1>
-<p>Ingrese sus credenciales corporativas para continuar.</p>
-</div>
-
-<form>
-
-<div class="form-group">
-<label>Correo Electrónico</label>
-<div class="input-icon">
-<span class="material-symbols-outlined">mail</span>
-<input type="email" placeholder="nombre@samaltda.com">
-</div>
-</div>
-
-<div class="form-group">
-<div class="label-row">
-<label>Contraseña</label>
-<a href="/pages/recovery.html">¿Olvidó su contraseña?</a>
-</div>
-
-<div class="input-icon">
-<span class="material-symbols-outlined">lock</span>
-<input type="password" placeholder="••••••••">
-<button type="button" class="eye">
-<!--<span class="material-symbols-outlined">visibility</span>-->
-</button>
-</div>
-</div>
-
-<div class="remember">
-<input type="checkbox" id="remember">
-<label for="remember">Mantener sesión iniciada</label>
-</div>
-
-<button class="btn">
-<span class="material-symbols-outlined">login</span>
-Iniciar Sesión
-</button>
-
-<div class="divider">
-<span>O continuar con</span>
-</div>
-
-<div class="social">
-
-<button>
-Google
-</button>
-
-<button>
-SSO
-</button>
-
-</div>
-
-</form>
-
-<div class="footer-form">
-<p>
-© 2026 SAMA Ltda. Sistema de Acceso Restringido.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</main>
-
-<footer class="footer">
-<p class="copyright">© 2026 SAMA Ltda. – Todos los derechos reservados. <br><small>Powered by Fidian Peralta López</small></p>
-<footer>
-
+    <header class="header">
+        <div class="logo">
+            <img src="http://samaltda.com/gallery_gen/f4891564b318f2318266f83e5033b9e4.jpg" alt="logo-sama" width="70" height="70">
+            <a href="../index.html"><h2>SAMA <span>Ltda.</span></h2></a>
+        </div>
+        <nav class="nav">
+            <a href="#">Soporte Técnico</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="login-container">
+            <!-- IMAGEN LATERAL -->
+            <div class="login-image">
+                <div class="overlay">
+                    <h3>Líderes en Procesamiento de Sal</h3>
+                    <p>Gestión eficiente para la industria química y alimentaria.</p>
+                </div>
+            </div>
+            <!-- FORMULARIO -->
+            <div class="login-form">
+                <div class="form-header">
+                    <h1>Bienvenido</h1>
+                    <p>Ingrese sus credenciales corporativas para continuar.</p>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <div class="input-icon">
+                            <span class="material-symbols-outlined">mail</span>
+                            <input id="email" type="email" placeholder="nombre@samaltda.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="label-row">
+                            <label for="password">Contraseña</label>
+                            <a href="recovery.html">¿Olvidó su contraseña?</a>
+                        </div>
+                        <div class="input-icon">
+                            <span class="material-symbols-outlined">lock</span>
+                            <input id="password" type="password" placeholder="••••••••" required>
+                            <button type="button" class="eye" aria-label="Mostrar contraseña">
+                                <!--<span class="material-symbols-outlined">visibility</span>-->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Mantener sesión iniciada</label>
+                    </div>
+                    <button class="btn" type="submit">
+                        <span class="material-symbols-outlined">login</span>
+                        Iniciar Sesión
+                    </button>
+                    <div class="divider">
+                        <span>O continuar con</span>
+                    </div>
+                    <div class="social">
+                        <button type="button">Google</button>
+                        <button type="button">SSO</button>
+                    </div>
+                </form>
+                <div class="footer-form">
+                    <p>© 2026 SAMA Ltda. Sistema de Acceso Restringido.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copyright">© 2026 SAMA Ltda. – Todos los derechos reservados.<br><small>Powered by Fidian Peralta López</small></p>
+    </footer>
 </body>
 </html>

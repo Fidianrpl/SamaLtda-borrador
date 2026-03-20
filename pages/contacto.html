@@ -24,15 +24,15 @@
         <div class="logo">
             <img src="http://samaltda.com/gallery_gen/f4891564b318f2318266f83e5033b9e4.jpg" alt="logo-sama" width="85px" height="85px">
             <h2>SAMA Ltda.</h2>
-
         </div>
 
         <nav class="nav">
 
             <a href="../index.html">Inicio</a>
-            <a href="/pages/productos.html">Productos</a>
             <a href="/pages/quienes-somos.html">Quiénes Somos</a>
-            <a href="/pages/contacto.html" class="active">Contacto</a>
+            <a href="/pages/productos.html">Productos</a>
+            <a href="/pages/contacto.html"><button class="btn-primary">Contáctanos</button></a>                
+            <a href="/pages/login.html" target="_blank" rel="noopener noreferrer">Ingresar</a>
 
         </nav>
 
@@ -66,24 +66,24 @@
 
                         <div class="form-group">
                             <label>Nombre</label>
-                            <input type="text" placeholder="Tu nombre completo">
+                            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
                         </div>
 
                         <div class="form-group">
                             <label>Correo</label>
-                            <input type="email" placeholder="correo@ejemplo.com">
+                            <input type="email" name="correo" placeholder="correo@ejemplo.com" required>
                         </div>
 
                     </div>
 
                     <div class="form-group">
                         <label>Asunto</label>
-                        <input type="text" placeholder="Consulta sobre productos o pedidos">
+                        <input type="text" name="asunto" placeholder="Consulta sobre productos o pedidos">
                     </div>
 
                     <div class="form-group">
                         <label>Mensaje</label>
-                        <textarea rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
                     </div>
 
                     <button type="submit" class="btn">
@@ -155,8 +155,6 @@ Enviar mensaje
         <a href="#">Política de privacidad</a>
         <a href="#">Términos de servicio</a>
         <p class="copyright">© 2026 SAMA Ltda. – Todos los derechos reservados. <br><small>Powered by Fidian Peralta López</small></p>
-
-        </div>
 
     </footer>
     <script src="/css/js/menu.js"></script>
